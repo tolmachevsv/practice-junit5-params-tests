@@ -1,1 +1,1 @@
-# practice-junit5-params-tests
+В репозитории написаны параметризованные тесты с использованием ValueSource, CsvSource, EnumSource и MethodSource
