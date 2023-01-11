@@ -14,7 +14,7 @@ public class CsvSourceTest {
             "Сообщество, Страницы сообщества",
             "Избранное, Избранное содержание"
     })
-    @ParameterizedTest(name = "Open tabs {0} in Wikipedia")
+    @ParameterizedTest(name = "Open tab {0} in Wikipedia")
     void WikipediaSearchWithCsvSourceTest(String tab, String name) {
         wikipediaMainPage.openPage();
         wikipediaPortalsPage.openPage();
