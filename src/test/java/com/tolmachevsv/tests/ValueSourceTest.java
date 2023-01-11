@@ -13,12 +13,12 @@ public class ValueSourceTest {
     @ValueSource(strings = {
             "Теория графов",
             "Щелкунчик",
-            "Пушкин"
+            "Толстой"
     })
     @ParameterizedTest(name = "Search title {0} in Wikipedia")
-    void WikipediaSearchWithValueSourceTest(String searchText) {
+    void WikipediaSearchWithValueSourceTest(String text) {
         wikipediaMainPage.openPage();
-        wikipediaMainPage.searchRequiredTitle(searchText);
-        wikipediaTitlePage.checkIfCorrectTitle(searchText);
+        wikipediaMainPage.searchRequiredTitle(text);
+        wikipediaTitlePage.checkIfCorrectTitle(text);
     }
 }
